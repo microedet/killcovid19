@@ -1,0 +1,10 @@
+<application>
+  <component name="GithubAccounts">
+    <account id="7c395e0f-ffad-41ce-83bf-58724fe671f3" name="microedet@microedet.com">
+      <server host="github.com" />
+    </account>
+  </component>
+  <component name="GithubSettings">
+    <option name="CLONE_GIT_USING_SSH" value="true" />
+  </component>
+</application>
