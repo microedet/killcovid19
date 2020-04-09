@@ -2,11 +2,15 @@ package com.vicente.pastor;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.vicente.pastor.entities.CapitanByte;
+import com.vicente.pastor.entities.Platform;
+
+import java.lang.reflect.Array;
 
 public class Level {
 
     CapitanByte capitanByte;
-    //Laser laser;
+    //array de virus
+    //Array<Platform>
 
     public Level() {
 

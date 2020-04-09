@@ -8,6 +8,7 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.viewport.ExtendViewport;
 import com.vicente.pastor.util.Assets;
+import com.vicente.pastor.util.CamaraSeguimiento;
 import com.vicente.pastor.util.Constants;
 
 public class MainScreen extends ScreenAdapter {
@@ -17,6 +18,7 @@ public class MainScreen extends ScreenAdapter {
 	Level level;
 	SpriteBatch batch;
 	ExtendViewport viewport;
+	public CamaraSeguimiento camaraSeguimiento;
 
 
 	@Override
@@ -28,6 +30,9 @@ public class MainScreen extends ScreenAdapter {
 		level = new Level();
 		batch = new SpriteBatch();
 		viewport = new ExtendViewport(Constants.WORLD_SIZE, Constants.WORLD_SIZE);
+		camaraSeguimiento= new CamaraSeguimiento(viewport.getCamera(),level.capitanByte);
+
+
 	}
 
 	@Override
@@ -43,6 +48,8 @@ public class MainScreen extends ScreenAdapter {
 	@Override
 	public void render(float delta) {
 		level.update(delta);
+
+		camaraSeguimiento.update();
 		viewport.apply();
 		Gdx.gl.glClearColor(
 				Constants.BACKGROUND_COLOR.r,

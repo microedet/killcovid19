@@ -12,12 +12,15 @@ import com.vicente.pastor.util.Constants;
 import com.vicente.pastor.util.Enums;
 import com.vicente.pastor.util.Utils;
 
+import java.awt.Event;
+
 public class CapitanByte {
 
     public final static String TAG=CapitanByte.class.getName();
+    //public Event position;
 
     //añadimos un vector de posicion,frame para paseo,velocidad
-    Vector2 position;
+    public Vector2 position;
     Vector2 ultimoFrame;
     Vector2 velocidad;
 
