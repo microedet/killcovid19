@@ -3,5 +3,8 @@
     <account id="13803b4a-1f1f-4e57-9964-e78eefed7927" name="microedet@microedet.com">
       <server host="github.com" />
     </account>
+    <account id="9957f6f3-110f-4717-a9c0-bbe9387fdb0a" name="microedet@microedet.com">
+      <server useHttp="false" host="github.com" />
+    </account>
   </component>
 </application>
